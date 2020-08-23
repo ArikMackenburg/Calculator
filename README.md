@@ -19,6 +19,6 @@ Second number: 2
 Result: 3
 ```
 ### Screenshot
-![Screenshot](./images/screenshot.png)
+![Screenshot](./Images/Screenshot.png)
 ### Author: Arik Mackenburg
 My first C# Project for DeltaV 401
