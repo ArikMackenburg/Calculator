@@ -8,48 +8,54 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.WriteLine( Add(2.2 , 4));
-            var input = Console.ReadLine();
-            //Console.Write(input.IndexOf('+'));
-
-            if (input.IndexOf("+") > 0)
+            Console.WriteLine("Calculator!");
+            Console.WriteLine("Example");
+            Console.WriteLine("Input: 2+2");
+            Console.WriteLine("Result: 2+2 = 4");
+            for (int i = 0; i < 5; i++)
             {
-                var numbersString = input.Split('+');
-                double[] numbers = new double[2];
-                numbers[0] = Convert.ToDouble(numbersString[0]);
-                numbers[1] = Convert.ToDouble(numbersString[1]);
-                Console.WriteLine(Add(numbers[0],numbers[1]));
+                Console.WriteLine("--------------------");
+                var input = Console.ReadLine();
                 
-            }
 
-            if (input.IndexOf("-") > 0)
-            {
-                var numbersString = input.Split('-');
-                double[] numbers = new double[2];
-                numbers[0] = Convert.ToDouble(numbersString[0]);
-                numbers[1] = Convert.ToDouble(numbersString[1]);
-                Console.WriteLine(Sub(numbers[0], numbers[1]));
+                if (input.IndexOf("+") > 0)
+                {
+                    var numbersString = input.Split('+');
+                    double[] numbers = new double[2];
+                    numbers[0] = Convert.ToDouble(numbersString[0]);
+                    numbers[1] = Convert.ToDouble(numbersString[1]);
+                    Console.WriteLine(input + " = " + Add(numbers[0], numbers[1]));
 
-            }
-            if (input.IndexOf("*") > 0)
-            {
-                var numbersString = input.Split('*');
-                double[] numbers = new double[2];
-                numbers[0] = Convert.ToDouble(numbersString[0]);
-                numbers[1] = Convert.ToDouble(numbersString[1]);
-                Console.WriteLine(Multiply(numbers[0], numbers[1]));
+                }
 
-            }
+                if (input.IndexOf("-") > 0)
+                {
+                    var numbersString = input.Split('-');
+                    double[] numbers = new double[2];
+                    numbers[0] = Convert.ToDouble(numbersString[0]);
+                    numbers[1] = Convert.ToDouble(numbersString[1]);
+                    Console.WriteLine(input + " = " + Sub(numbers[0], numbers[1]));
 
-            if (input.IndexOf("/") > 0)
-            {
-                var numbersString = input.Split('/');
-                double[] numbers = new double[2];
-                numbers[0] = Convert.ToDouble(numbersString[0]);
-                numbers[1] = Convert.ToDouble(numbersString[1]);
-                Console.WriteLine(Divide(numbers[0], numbers[1]));
+                }
+                if (input.IndexOf("*") > 0)
+                {
+                    var numbersString = input.Split('*');
+                    double[] numbers = new double[2];
+                    numbers[0] = Convert.ToDouble(numbersString[0]);
+                    numbers[1] = Convert.ToDouble(numbersString[1]);
+                    Console.WriteLine(input + " = " + Multiply(numbers[0], numbers[1]));
 
+                }
+
+                if (input.IndexOf("/") > 0)
+                {
+                    var numbersString = input.Split('/');
+                    double[] numbers = new double[2];
+                    numbers[0] = Convert.ToDouble(numbersString[0]);
+                    numbers[1] = Convert.ToDouble(numbersString[1]);
+                    Console.WriteLine(input + " = " + Divide(numbers[0], numbers[1]));
+
+                }
             }
         }
 
