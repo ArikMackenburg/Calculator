@@ -18,6 +18,7 @@ Operation: +
 Second number: 2
 Result: 3
 ```
-
+### Screenshot
+![Screenshot](./images/screenshot.png)
 ### Author: Arik Mackenburg
 My first C# Project for DeltaV 401
