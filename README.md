@@ -12,10 +12,12 @@ Each of these methods should take in 2 parameters, and return the solution of th
 Output to the console the answer to the proposed math problem. You may assume valid input.
 
 ### Example Output
-```First number: 1
+```
+First number: 1
 Operation: +
 Second number: 2
-Result: 3```
-------------------
+Result: 3
+```
+
 ### Author: Arik Mackenburg
 My first C# Project for DeltaV 401
